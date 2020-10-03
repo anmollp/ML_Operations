@@ -5,7 +5,7 @@
 
 1. Setup local mysql and create two databases namely Task, Task_Result respectively, with username and password set to 'root' for the databases.
 
-2. Create table in each database using the table DDL provided in TableSchemas.sql in the folder.
+2. Create table in each database using the table DDL provided in .sql files in the folder.
 
 3. Once the setup is complete run the data_load.sh shell script to load data into the Task database.
 
