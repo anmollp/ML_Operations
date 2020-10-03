@@ -5,15 +5,15 @@
 
 1. Setup local mysql and create two databases namely Task, Task_Result respectively, with username and password set to 'root' for the databases.
 
-2.Create table in each database using the table DDL provided in TableSchemas.sql in the folder.
+2. Create table in each database using the table DDL provided in TableSchemas.sql in the folder.
 
 3. Once the setup is complete run the data_load.sh shell script to load data into the Task database.
 
 4. In the `ML_Operations` folder build image using the Dockerfile.
-Ex: sudo docker build --tag ml_ops_app . 
+Ex: docker build --tag ml_ops_app . 
 
 5. Run the flask application.
-Ex: sudo docker run --name ml_ops_app_v1 -p 5000:5000 ml_ops_app
+Ex: docker run --name ml_ops_app_v1 -p 5000:5000 ml_ops_app
 
 **Note**: In case mysql local is not accessible, it would be a binding issue. Make the following changes:
 In /etc/mysql/my.cnf add the following line -> bind-address    = 0.0.0.0
